@@ -9,13 +9,12 @@ public class Banco {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println(" BEM VINDO ");
-
         int opcao;
         float saldo = 1000, deposito = 0, saque, sair;
         String CPF, senha = "";
 
         do {
+            System.out.println(" BEM VINDO ");
             System.out.print("Digite seu CPF: ");
             CPF = sc.next();
             if (CPF.equals("123.456.789-00")) {
